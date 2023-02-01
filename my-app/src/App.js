@@ -5,6 +5,7 @@ import Intro from "./Intro";
 import AboutMe from "./AboutMe";
 import MyWorks from "./MyWorks";
 import ContactMe from "./ContactMe";
+import Cursor from "./Cursor";
 
 export const ThemeContext = createContext(null);
 
@@ -22,6 +23,7 @@ function App() {
     return (
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
             <div className="App" data-theme={theme} id={theme}>
+                <Cursor />
                 <div className="toggle-bar">
                     <div className="theme-light">
                         <svg width="100%" height="100%" viewBox="0 0 700 550">
@@ -67,7 +69,7 @@ function App() {
                 <ContactMe />
             </div>
         </ThemeContext.Provider>
-    );
+        );
 }
 
 export default App;
