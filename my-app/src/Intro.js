@@ -25,7 +25,7 @@ export default function Intro() {
             <div className="face-intro-wrapper">
                 <img
                     className="face-intro"
-                    src="faces/face_intro.png"
+                    src="images/faces/face_intro.png"
                     style={{ transform: `scale(${scale})` }}
                 ></img>
             </div>

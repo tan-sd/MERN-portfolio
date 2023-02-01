@@ -5,7 +5,10 @@ export default function AboutMe() {
         <div className="aboutMe-wrapper container-fluid">
             <div className="row">
                 <div className="col-6">
-                    <img src="faces/face_aboutme.png" className="face-aboutme"></img>
+                    <img
+                        src="images/faces/face_aboutme.png"
+                        className="face-aboutme"
+                    ></img>
                 </div>
                 <div className="pt-5 col-6 aboutMe-text rounded-5">
                     <div className="aboutMe-title">ABOUT ME</div>

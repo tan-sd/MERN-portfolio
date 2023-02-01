@@ -18,7 +18,7 @@ function App() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
 
     return (
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
@@ -69,7 +69,7 @@ function App() {
                 <ContactMe />
             </div>
         </ThemeContext.Provider>
-        );
+    );
 }
 
 export default App;
