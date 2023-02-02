@@ -52,7 +52,6 @@ export default function Intro() {
                     </svg>
                 </div>
             </div>
-            <div className="intro-wrapper-end "></div>
         </div>
     );
 }
