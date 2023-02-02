@@ -10,34 +10,27 @@ export default function ContactMe() {
                         className="face-contactme"
                     ></img>
                 </div>
-                <div className="pt-5 col-6 contactMe-text rounded-5">
+                <div className="col-6"></div>
+            </div>
+
+            <div className="row">
+                <div className="contactMe-text rounded-5">
                     <div className="contactMe-title">CONTACT ME</div>
-                    <div className="container">
+                    <div className="container contactMe-form">
                         <div className="row">
-                            <div class="form-floating mb-3 contactMe-form col-6">
+                            <div class="form-floating mb-3 col-6">
                                 <input
                                     type="email"
-                                    class="form-control"
+                                    className="form-control"
                                     id="floatingInput"
                                     placeholder="name@example.com"
                                 ></input>
-                                <label for="floatingInput">First Name</label>
+                                <label for="floatingInput">Name</label>
                             </div>
-                            <div class="form-floating mb-3 contactMe-form col-6">
+                            <div className="form-floating mb-3 col-6">
                                 <input
                                     type="email"
-                                    class="form-control"
-                                    id="floatingInput"
-                                    placeholder="name@example.com"
-                                ></input>
-                                <label for="floatingInput">Last Name</label>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div class="form-floating mb-3 contactMe-form col-6">
-                                <input
-                                    type="email"
-                                    class="form-control"
+                                    className="form-control"
                                     id="floatingInput"
                                     placeholder="name@example.com"
                                 ></input>
@@ -45,21 +38,22 @@ export default function ContactMe() {
                             </div>
                         </div>
                         <div className="row">
-                            <div class="form-floating contactMe-form">
+                            <div className="form-floating">
                                 <textarea
-                                    class="form-control"
+                                    className="form-control"
                                     placeholder="Leave a comment here"
                                     id="floatingTextarea"
+                                    style={{ height: 200, resize: `none` }}
                                 ></textarea>
-                                <label for="floatingTextarea">Comments</label>
+                                <label for="floatingTextarea">Message</label>
                             </div>
                         </div>
-                        <div className="row">
+                        <div className="row contactMe-btn float-end me-1">
                             <button
                                 type="button"
-                                class="btn btn-primary btn-sm"
+                                className="btn p-2"
                             >
-                                Small button
+                                Submit
                             </button>
                         </div>
                     </div>
