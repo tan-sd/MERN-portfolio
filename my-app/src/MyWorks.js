@@ -39,6 +39,7 @@ export default function MyWorks() {
                                     Github
                                 </a>
                             </div>
+                            <hr style={{marginTop: 50}}></hr>
                         </div>
                         <div className="myWorks-project">
                             <div>Pokemon Random Generator</div>
@@ -63,6 +64,7 @@ export default function MyWorks() {
                                     Github
                                 </a>
                             </div>
+                            <hr style={{marginTop: 50}}></hr>
                         </div>
                         <div className="myWorks-project">
                             <div>BOJIO</div>
@@ -90,6 +92,7 @@ export default function MyWorks() {
                                     Github
                                 </a>
                             </div>
+                            <hr style={{marginTop: 50}}></hr>
                         </div>
                     </div>
                 </div>
