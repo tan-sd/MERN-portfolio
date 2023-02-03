@@ -18,23 +18,23 @@ export default function ContactMe() {
                     <div className="contactMe-title">CONTACT ME</div>
                     <div className="container contactMe-form">
                         <div className="row">
-                            <div class="form-floating mb-3 col-6">
+                            <div className="form-floating mb-3 col-lg-6 col-12">
                                 <input
                                     type="email"
                                     className="form-control"
                                     id="floatingInput"
                                     placeholder="name@example.com"
                                 ></input>
-                                <label for="floatingInput">Name</label>
+                                <label>Name</label>
                             </div>
-                            <div className="form-floating mb-3 col-6">
+                            <div className="form-floating mb-3 col-lg-6 col-12">
                                 <input
                                     type="email"
                                     className="form-control"
                                     id="floatingInput"
                                     placeholder="name@example.com"
                                 ></input>
-                                <label for="floatingInput">Email</label>
+                                <label>Email</label>
                             </div>
                         </div>
                         <div className="row">
@@ -45,7 +45,7 @@ export default function ContactMe() {
                                     id="floatingTextarea"
                                     style={{ height: 200, resize: `none` }}
                                 ></textarea>
-                                <label for="floatingTextarea">Message</label>
+                                <label>Message</label>
                             </div>
                         </div>
                         <div className="row contactMe-btn float-end me-1">
