@@ -4,7 +4,7 @@ import ReactSwitch from "react-switch";
 import Intro from "./components/Intro";
 import AboutMe from "./components/AboutMe";
 import MyWorks from "./components/MyWorks";
-import ContactMe from "./ContactMe";
+import ContactMe from "./components/ContactMe";
 import Cursor from "./components/Cursor";
 
 export const ThemeContext = createContext(null);
