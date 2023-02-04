@@ -4,13 +4,13 @@ export default function ContactMe() {
     return (
         <div className="contactMe-wrapper container-fluid">
             <div className="row">
-                <div className="col-6">
+                <div className="col">
                     <img
-                        src="images/faces/face_contactme.png"
+                        src={`${process.env.PUBLIC_URL}/images/faces/face_contactme.png`}
                         className="face-contactme"
+                        alt="face-contactme"
                     ></img>
                 </div>
-                <div className="col-6"></div>
             </div>
 
             <div className="row">

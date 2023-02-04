@@ -1,11 +1,11 @@
 // import "./App.css";
 import { createContext, useState, useEffect } from "react";
 import ReactSwitch from "react-switch";
-import Intro from "./Intro";
-import AboutMe from "./AboutMe";
-import MyWorks from "./MyWorks";
+import Intro from "./components/Intro";
+import AboutMe from "./components/AboutMe";
+import MyWorks from "./components/MyWorks";
 import ContactMe from "./ContactMe";
-import Cursor from "./Cursor";
+import Cursor from "./components/Cursor";
 
 export const ThemeContext = createContext(null);
 

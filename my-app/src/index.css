@@ -296,6 +296,18 @@ body {
     }
 }
 
+@media (max-width: 390px) {
+    .intro-upper {
+        top: calc(28% - 100px);
+        left: 25%;
+    }
+
+    .intro-text-2 {
+        position: relative;
+        left: 15%;
+    }
+}
+
 
 /* About Me */
 .aboutMe-wrapper {
@@ -563,6 +575,23 @@ body {
     }
 }
 
+@media (max-width: 390px) {
+    .aboutMe-firstPara {
+        font-size: 14px;
+        width: 350px;
+    }
+
+    .aboutMe-secondPara {
+        font-size: 14px;
+        width: 350px;
+    }
+
+    .aboutMe-thirdPara {
+        font-size: 14px;
+        width: 350px;
+    }
+}
+
 /* My Works */
 .myWorks-wrapper {
     width: 100%;
@@ -570,9 +599,9 @@ body {
 }
 
 .face-myworks {
-    position: relative;
-    transform: translate(-50%);
-    left: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
     /* animation: showFaceIntro 350ms cubic-bezier(.65, -1.5, .40, 1.5);
   animation-delay: 0.3s;
   animation-fill-mode: forwards; */
@@ -600,7 +629,7 @@ body {
 
 .myWorks-project {
     margin-top: 80px;
-    width: 600px;
+    width: 470px;
     height: 250px;
 }
 
@@ -625,7 +654,7 @@ body {
     display: flex;
     grid-gap: 1rem;
     gap: 1rem;
-    width: 50%;
+    width: 70%;
 }
 
 .project-btn {
@@ -785,6 +814,24 @@ body {
     }
 }
 
+@media (max-width: 390px) {
+    .myWorks-project-text p {
+        width: 330px;
+    }
+
+    .myWorks-project {
+        width: 350px;
+    }
+
+    .myWorks-project-text {
+        width: 350px;
+    }
+    
+    .project-btns {
+        width: 70%;
+    }
+}
+
 /* Contact Me */
 .contactMe-wrapper {
     width: 100%;
@@ -793,9 +840,7 @@ body {
 
 .face-contactme {
     margin-top: 100px;
-    position: relative;
-    transform: translate(-50%);
-    left: 50%;
+    left: 0;
     /* animation: showFaceIntro 350ms cubic-bezier(.65, -1.5, .40, 1.5);
   animation-delay: 0.3s;
   animation-fill-mode: forwards; */
@@ -868,6 +913,12 @@ input#floatingInput.form-control {
     }
 }
 
+@media (max-width: 1149px) {
+    .contactMe-wrapper {
+        height: 1200px;
+    }
+}
+
 @media (max-width: 1143px) {
     .face-contactme {
         width: 450px;
@@ -887,6 +938,10 @@ input#floatingInput.form-control {
     .contactMe-text {
         width: 80% !important;
     }
+
+    .contactMe-wrapper {
+        height: 1100px;
+    }
 }
 
 @media (max-width: 980px) {
@@ -900,11 +955,27 @@ input#floatingInput.form-control {
         width: 80% !important;
     }
     
+    .contactMe-wrapper {
+        height: 1100px;
+    }
 }
 
 @media (max-width: 547px) {
-
     .contactMe-text {
         width: 80% !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .face-contactme {
+        width: 350px;
+    }
+
+    .contactMe-title {
+        font-size: 30px;
+    }
+
+    .contactMe-wrapper {
+        height: 1150px;
     }
 }
