@@ -19,7 +19,6 @@ export default class contactDAO {
             try {
                 const contactDoc = {
                     name: user.name,
-                    
                     email: email,
                     date: date,
                     text: message,

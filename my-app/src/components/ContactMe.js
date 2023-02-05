@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import DataService from "../services/message";
 
 export default function ContactMe() {
 
@@ -32,7 +32,8 @@ export default function ContactMe() {
             date: date,
         }
 
-        axios.post('http://localhost:5000/api/v1/data/contact', newMessage);
+        DataService.createMessage(newMessage);
+        // axios.post('http://localhost:5000/api/v1/data/contact', newMessage);
     }
 
     return (
