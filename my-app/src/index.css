@@ -296,7 +296,7 @@ body {
     }
 }
 
-@media (max-width: 390px) {
+@media only screen and (max-device-width: 500px) {
     .intro-upper {
         top: calc(28% - 100px);
         left: 25%;
@@ -575,7 +575,7 @@ body {
     }
 }
 
-@media (max-width: 390px) {
+@media only screen and (max-device-width: 500px) {
     .aboutMe-firstPara {
         font-size: 14px;
         width: 350px;
@@ -814,7 +814,7 @@ body {
     }
 }
 
-@media (max-width: 390px) {
+@media only screen and (max-device-width: 500px) {
     .myWorks-project-text p {
         width: 330px;
     }
@@ -966,7 +966,7 @@ input#floatingInput.form-control {
     }
 }
 
-@media (max-width: 390px) {
+@media only screen and (max-device-width: 500px) {
     .face-contactme {
         width: 350px;
     }
