@@ -1,6 +1,40 @@
-import { React } from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 export default function ContactMe() {
+
+    const [input, setInput] = useState({
+        sender: '',
+        message: '',
+        email: '',
+    })
+
+    function handleChange(event) {
+        const {name, value} = event.target;
+
+        setInput(prevInput => {
+            return {
+                ...prevInput,
+                [name] : value
+            }
+        })
+    }
+
+    const date = new Date()
+
+    function handleClick(event) {
+        event.preventDefault();
+        console.log(input);
+        const newMessage = {
+            name: input.sender,
+            text: input.message,
+            email: input.email,
+            date: date,
+        }
+
+        axios.post('http://localhost:5000/api/v1/data/contact', newMessage);
+    }
+
     return (
         <div className="contactMe-wrapper container-fluid">
             <div className="row">
@@ -20,19 +54,23 @@ export default function ContactMe() {
                         <div className="row">
                             <div className="form-floating mb-3 col-lg-6 col-12">
                                 <input
-                                    type="email"
+                                    onChange={handleChange}
+                                    type="text"
                                     className="form-control"
-                                    id="floatingInput"
-                                    placeholder="name@example.com"
+                                    id="sender"
+                                    name="sender"
+                                    value={input.sender}
                                 ></input>
                                 <label>Name</label>
                             </div>
                             <div className="form-floating mb-3 col-lg-6 col-12">
                                 <input
+                                    onChange={handleChange}
+                                    name="email"
                                     type="email"
                                     className="form-control"
-                                    id="floatingInput"
-                                    placeholder="name@example.com"
+                                    id="email"
+                                    value={input.email}
                                 ></input>
                                 <label>Email</label>
                             </div>
@@ -40,10 +78,12 @@ export default function ContactMe() {
                         <div className="row">
                             <div className="form-floating">
                                 <textarea
+                                    onChange={handleChange}
+                                    id="message"
                                     className="form-control"
-                                    placeholder="Leave a comment here"
-                                    id="floatingTextarea"
                                     style={{ height: 200, resize: `none` }}
+                                    value={input.message}
+                                    name="message"
                                 ></textarea>
                                 <label>Message</label>
                             </div>
@@ -52,6 +92,7 @@ export default function ContactMe() {
                             <button
                                 type="button"
                                 className="btn p-2"
+                                onClick={handleClick}
                             >
                                 Submit
                             </button>
