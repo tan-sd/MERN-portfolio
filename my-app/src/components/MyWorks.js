@@ -127,4 +127,4 @@ export default function MyWorks() {
             </div>
         </div>
     );
-}
+};
